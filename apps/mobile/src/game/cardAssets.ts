@@ -1,0 +1,60 @@
+import type { ImageSourcePropType } from "react-native";
+
+const CARD_FACES: Record<string, ImageSourcePropType> = {
+  "m01-bright": require("../../assets/cards/faces/m01-bright.png"),
+  "m01-red-poetry": require("../../assets/cards/faces/m01-red-poetry.png"),
+  "m01-pi-a": require("../../assets/cards/faces/m01-pi-a.png"),
+  "m01-pi-b": require("../../assets/cards/faces/m01-pi-b.png"),
+  "m02-bird": require("../../assets/cards/faces/m02-bird.png"),
+  "m02-red-poetry": require("../../assets/cards/faces/m02-red-poetry.png"),
+  "m02-pi-a": require("../../assets/cards/faces/m02-pi-a.png"),
+  "m02-pi-b": require("../../assets/cards/faces/m02-pi-b.png"),
+  "m03-bright": require("../../assets/cards/faces/m03-bright.png"),
+  "m03-red-poetry": require("../../assets/cards/faces/m03-red-poetry.png"),
+  "m03-pi-a": require("../../assets/cards/faces/m03-pi-a.png"),
+  "m03-pi-b": require("../../assets/cards/faces/m03-pi-b.png"),
+  "m04-bird": require("../../assets/cards/faces/m04-bird.png"),
+  "m04-plain-ribbon": require("../../assets/cards/faces/m04-plain-ribbon.png"),
+  "m04-pi-a": require("../../assets/cards/faces/m04-pi-a.png"),
+  "m04-pi-b": require("../../assets/cards/faces/m04-pi-b.png"),
+  "m05-animal": require("../../assets/cards/faces/m05-animal.png"),
+  "m05-plain-ribbon": require("../../assets/cards/faces/m05-plain-ribbon.png"),
+  "m05-pi-a": require("../../assets/cards/faces/m05-pi-a.png"),
+  "m05-pi-b": require("../../assets/cards/faces/m05-pi-b.png"),
+  "m06-animal": require("../../assets/cards/faces/m06-animal.png"),
+  "m06-blue-ribbon": require("../../assets/cards/faces/m06-blue-ribbon.png"),
+  "m06-pi-a": require("../../assets/cards/faces/m06-pi-a.png"),
+  "m06-pi-b": require("../../assets/cards/faces/m06-pi-b.png"),
+  "m07-boar": require("../../assets/cards/faces/m07-boar.png"),
+  "m07-plain-ribbon": require("../../assets/cards/faces/m07-plain-ribbon.png"),
+  "m07-pi-a": require("../../assets/cards/faces/m07-pi-a.png"),
+  "m07-pi-b": require("../../assets/cards/faces/m07-pi-b.png"),
+  "m08-bright": require("../../assets/cards/faces/m08-bright.png"),
+  "m08-bird": require("../../assets/cards/faces/m08-bird.png"),
+  "m08-pi-a": require("../../assets/cards/faces/m08-pi-a.png"),
+  "m08-pi-b": require("../../assets/cards/faces/m08-pi-b.png"),
+  "m09-cup": require("../../assets/cards/faces/m09-cup.png"),
+  "m09-blue-ribbon": require("../../assets/cards/faces/m09-blue-ribbon.png"),
+  "m09-pi-a": require("../../assets/cards/faces/m09-pi-a.png"),
+  "m09-pi-b": require("../../assets/cards/faces/m09-pi-b.png"),
+  "m10-animal": require("../../assets/cards/faces/m10-animal.png"),
+  "m10-blue-ribbon": require("../../assets/cards/faces/m10-blue-ribbon.png"),
+  "m10-pi-a": require("../../assets/cards/faces/m10-pi-a.png"),
+  "m10-pi-b": require("../../assets/cards/faces/m10-pi-b.png"),
+  "m11-bright": require("../../assets/cards/faces/m11-bright.png"),
+  "m11-pi-a": require("../../assets/cards/faces/m11-pi-a.png"),
+  "m11-pi-b": require("../../assets/cards/faces/m11-pi-b.png"),
+  "m11-double-pi": require("../../assets/cards/faces/m11-double-pi.png"),
+  "m12-rain-bright": require("../../assets/cards/faces/m12-rain-bright.png"),
+  "m12-animal": require("../../assets/cards/faces/m12-animal.png"),
+  "m12-rain-ribbon": require("../../assets/cards/faces/m12-rain-ribbon.png"),
+  "m12-double-pi": require("../../assets/cards/faces/m12-double-pi.png"),
+  "bonus-2pi-a": require("../../assets/cards/faces/bonus-2pi-a.png"),
+  "bonus-2pi-b": require("../../assets/cards/faces/bonus-2pi-b.png")
+};
+
+export const CARD_BACK_SOURCE: ImageSourcePropType = require("../../assets/cards/faces/card-back.png");
+
+export function cardFaceSource(cardId: string): ImageSourcePropType | undefined {
+  return CARD_FACES[cardId];
+}
