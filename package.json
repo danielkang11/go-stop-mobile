@@ -1,0 +1,24 @@
+{
+  "name": "go-stop-mobile",
+  "version": "0.2.0",
+  "private": true,
+  "packageManager": "pnpm@11.16.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @gostop/mobile start",
+    "dev:mobile": "pnpm --filter @gostop/mobile start",
+    "dev:relay": "pnpm --filter @gostop/relay dev",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "test": "pnpm -r --if-present run test",
+    "test:simulation": "pnpm --filter @gostop/game-core test:simulation",
+    "lint": "pnpm -r --if-present run lint",
+    "check": "pnpm typecheck && pnpm test",
+    "verify": "pnpm check && pnpm test:simulation"
+  }
+}

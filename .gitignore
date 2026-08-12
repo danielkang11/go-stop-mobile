@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and test output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Expo / React Native
+.expo/
+.expo-shared/
+web-build/
+dist-web/
+dist-v2/
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
