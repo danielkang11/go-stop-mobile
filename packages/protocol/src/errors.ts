@@ -1,0 +1,17 @@
+export const REJECT_CODES = [
+  "BAD_MESSAGE",
+  "FRAME_TOO_LARGE",
+  "NOT_AUTHENTICATED",
+  "ROOM_NOT_FOUND",
+  "ROOM_FULL",
+  "INVALID_NAME",
+  "INVALID_TOKEN",
+  "STALE_REVISION",
+  "ILLEGAL_COMMAND",
+  "ROOM_EXPIRED",
+  "UPGRADE_REQUIRED",
+  "RATE_LIMITED",
+  "INTERNAL_ERROR",
+] as const;
+
+export type RejectCode = (typeof REJECT_CODES)[number];
