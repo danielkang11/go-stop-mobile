@@ -6,6 +6,10 @@ V2 adds traditional Hwatu card faces with legible month badges, two double-pi se
 
 The original architecture and V1 decisions are documented in [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md); the V2 service-card profile and research basis are documented in [docs/JOKER_RULES.md](./docs/JOKER_RULES.md).
 
+For a durable handoff into a new development task, read
+[docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md). Repository-wide agent
+instructions live in [AGENTS.md](./AGENTS.md).
+
 ## Prerequisites
 
 - Node.js 22.13 or newer (the workspace pins Node 24.14 in `.node-version`)
